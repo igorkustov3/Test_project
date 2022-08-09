@@ -1,0 +1,637 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Inter', sans-serif
+    font-family: 'Play', sans-serif
+    font-family: 'Roboto', sans-serif
+
+section
+    margin: 0 auto
+
+.box
+    width: 1099px
+
+.nav
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .navigation
+        /* width: 1099px */
+        height: 100px
+        margin: 0
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .navigation-menu
+            margin-right: 100px
+            min-width: 345px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            .navigation-menu__title
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #000000
+                text-decoration: none
+                margin-right: 30px
+            .navigation-menu__title:last-child
+                margin-right: 0
+        .navigation-logo
+            margin-right: 166px
+        .navigation-info
+            width: 170px
+            height: auto
+            .navigation-info__phone, .navigation-info__mail
+                text-decoration: none
+                margin-right: 30px
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 16px
+                color:#025ED4
+        .navigation-hours
+            .navigation-hours__text, .navigation-hours__numbers
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 16px
+                color: #025ED4
+                margin: 8px
+
+.promo
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 642px
+    background: url('../img/promo-background.png') center (center / cover) no-repeat
+    .promo-content
+       margin: 0 auto
+       min-height: 642px
+       padding-top: 183px
+       padding-bottom: 137px
+       display: flex
+       flex-direction: column
+       .promo-content__title h1
+        font-family: 'Play'
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        color: #FFFFFF
+        text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15)
+    .promo-content__subtitle
+        margin-top: 56px
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+        color: #FFFFFF
+    .buttons-wrapp
+        margin-top: 56px
+        .promo-content__call-btn
+            margin-right: 43px
+            width: 203px
+            height: 62px
+            left: 130px
+            top: 541px
+            box-shadow: inset 2px 2px 5px rgba(133, 217, 255, 0.6)
+            background-color: #025ED4
+            border: none
+            cursor: pointer
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 600
+            font-size: 18px
+            line-height: 20px
+            color: #FFFFFF
+        .promo-content__catalog-btn
+            width: 203px
+            height: 62px
+            left: 376px
+            top: 541px
+            background: transparent
+            /* background: rgba(0, 0, 0, 0) */
+            border: 1px solid #FFF
+            cursor: pointer
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 600
+            font-size: 18px
+            line-height: 20px
+            color: #FFFFFF
+.presentation 
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 65px 136px
+    height: 808px
+    background: url('../img/presentation-background.png') center (center / cover) no-repeat
+    .presentation-content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .presentation-content__title
+            font-family: 'Play'
+            font-style: normal
+            font-weight: 700
+            font-size: 40px
+            line-height: 70px
+            color: #000000
+            margin-bottom: 63px
+            text-align: center
+        .presentation-content__item
+            display: flex
+            flex-direction: row
+            justify-content: center
+            flex-wrap: wrap
+            text-align: center
+            &-installation, &-mounting, &-cleaning, &-production, &-service
+                width: 331px
+                margin-right: 50px
+                margin-bottom: 50px
+            &-installation, &-mounting, &-cleaning, &-production, &-service:nth-child(3)
+                margin-right: 0
+            &-service
+                margin-right: 0
+            &-installation, &-mounting, &-cleaning, &-production, &-service 
+                &-img, &-header
+                    margin-bottom: 20px
+            &-installation, &-mounting, &-cleaning, &-production, &-service 
+                &-img
+                    width: 115px
+                    height: 115px
+.about
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 835px
+    background: url('../img/about-background.png') center (center / cover) no-repeat
+    .about-content
+        height: 835px
+        padding-top: 34px
+        padding-bottom: 143px
+        .about-content__title
+            margin-bottom: 32px
+            text-align: center
+            font-family: 'Play'
+            font-style: normal
+            font-weight: 700
+            font-size: 40px
+            line-height: 70px
+            color:#000000
+        .about-content__text
+            margin-bottom: 52px
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 30px
+            color: #000000
+        .about-content__item
+            &-descr
+                width: 767px
+                margin-bottom: 80px
+                display: flex
+                &-img
+                    margin-right: 34px
+                &-text
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 18px
+                    line-height: 30px
+                    color: #FFFFFF
+.works
+    display: flex
+    justify-content: center
+    height: 1832px
+    background: url('../img/works-background.png') center (center / cover) no-repeat
+    &-content
+        padding: 65px 0
+        &__header
+            text-align: center
+            font-family: 'Play'
+            font-style: normal
+            font-weight: 700
+            font-size: 40px
+            line-height: 70px
+            color: #000000
+    .carousel
+        margin-top: 46px
+        margin-bottom: 80px
+        &__inner
+            position: relative
+            width: 958px
+            margin: 0 auto
+            .slick-prev
+                position: absolute
+                top: 35%
+                transform: translateY(-50%)
+                left: -66px
+                border: none
+                background: transparent
+                cursor: pointer
+                img
+                    width: 38px
+                    height: 62px
+            .slick-next
+                position: absolute
+                top: 35%
+                transform: translateY(-50%)
+                right: -66px
+                left: auto
+                border: none
+                background: transparent
+                cursor: pointer
+                img
+                    width: 38px
+                    height: 62px
+            .slick-slide
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 280px
+                height: 485px
+                /* cursor: pointer */
+                &__title
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 25px
+                    line-height: 70px
+                    text-decoration-line: underline
+                    color: #000000
+                &__text
+                    text-align: center
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 30px
+                    color: #000000 
+                .show-all
+                    text-decoration: underline
+                    transition: .5s ease
+                    opacity: 0
+                    text-align: center
+                    color: #fff
+                    width: 262px
+                    height: 72px
+                    background: rgba(94, 90, 90, 0.69)
+                    position: absolute
+                    padding: 22px
+                    top: 239px
+                    margin-right: 8px
+            .slick-slide:hover .show-all
+                    opacity: 1
+                    
+
+    .work-content__title
+        text-align: center
+        margin: 80px 0 25px 0
+        font-family: 'Play'
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        line-height: 70px
+    .work-content__wrap
+        .work-content__item
+            display: flex
+            justify-content: flex-start
+            margin-bottom: 25px
+            .work-content__item-info
+                width: 545px
+                .work-content__item-title
+                    font-family: 'Play'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 30px
+                    line-height: 70px
+                .work-content__item-text
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 30px
+        .work-content__item-img
+            width: 135px
+            height: 155px
+        .right
+            justify-content: flex-end
+        .left-column
+            margin-right: 80px
+.feedback
+    display: flex
+    justify-content: center
+    height: 356px
+    background: url('../img/feedback-background.png') center (center / cover) no-repeat
+    .box
+        .feedback-content
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 56px 0 66px 0
+            .feedback-title
+                text-align: center
+                font-family: 'Play'
+                font-style: normal
+                font-weight: 700
+                font-size: 40px
+                line-height: 40px
+                color: #FFFFFF
+                margin-bottom: 50px
+            input::placeholder
+                color: #FFF
+            .feedback-inputs__inp
+                padding: 10px
+                margin: 0 auto
+                background: transparent
+                border: 1px solid #FFF
+                width: 261px
+                height: 67px
+                margin-right: 46px
+                margin-bottom: 25px
+                color: #FFF
+            .feedback-subtitle
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                text-align: center
+                color: #FFFFFF
+            .feedback-btn
+                width: 305px
+                height: 67px
+                background-color: #025ED4
+                box-shadow: inset 2px 2px 5px rgba(133, 217, 255, 0.6)
+                border: none
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 20px
+                color: #FFF
+                cursor: pointer
+.product
+    display: flex
+    justify-content: center
+    align-items: center
+    background: url('../img/product-background.png') center (center / cover) no-repeat
+    .product-content
+        padding: 65px 0
+        .product-content__title
+            font-family: 'Play'
+            font-style: normal
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #000000
+        .card-wrapper
+            margin-top: 65px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            .product-card
+                display: flex
+                flex-direction: column
+                justify-content: space-evenly
+                align-items: center
+                width: 283px
+                height: 338px
+                background-color: #CEEFFF
+                margin-bottom: 66px
+                -webkit-box-shadow: 4px 4px 15px 15px rgba(0,85,121,0.25)
+                box-shadow: 4px 4px 15px 15px rgba(0,85,121,0.25)
+                .product-card__img
+                .product-card__title
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 18px
+                    color: #000000
+                .product-card__link
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 14px
+                    text-align: center
+                    text-decoration-line: underline
+                    color: #005579
+        .nav
+            margin: 65px
+        li.nav-item button
+            width: 130px
+            height: 40px
+            border-radius: 0 !important
+            border: 1px solid #000 !important
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 14px
+            color: #000 !important
+        li.nav-item button.active
+            background-color: #22ACE7
+            border: none !important
+            color: #fff !important
+
+
+
+.faq
+    display: flex
+    justify-content: center
+    min-height: 848px
+    background-color: #FFF
+    .faq-content
+        padding: 65px 0
+        .faq-content__title
+            text-align: center
+            font-family: 'Play'
+            font-style: normal
+            font-weight: 700
+            font-size: 50px
+            line-height: 70px
+            color: #000000
+            margin-bottom: 30px
+        .accordion-item
+            border-color: #025ED4
+        .accordion-button
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 600
+            font-size: 25px
+            line-height: 70px
+            color: #000000
+            background: transparent
+        .accordion-body
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 30px
+            color: #000000
+        .accordion-button::after
+            background-image: var(--bs-accordion-btn-active-icon)
+        .accordion-button:not(.collapsed)::after
+            background-image: var(--bs-accordion-btn-active-icon)
+.questions
+    display: flex
+    justify-content: center
+    min-height: 720px
+    background: url('../img/questions-background.png') center (center / cover) no-repeat
+    .questions-content
+        padding: 29px 0 33px 0
+        .questions-content__title
+            font-family: 'Play'
+            font-style: normal
+            font-weight: 700
+            font-size: 50px
+            line-height: 70px
+            color: #000000
+            text-align: center
+            margin-bottom: 40px
+        .questions-content__text
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 30px
+            text-align: center
+            color: #000000
+            margin-bottom: 40px
+        .questions-content__form
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .questions-content__form-inp
+                width: 465px
+                height: 67px
+                border: 1px solid black
+                background: transparent
+                margin-bottom: 30px
+                padding: 12px
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 30px
+                color: rgba(0, 0, 0, 0.6)
+            .questions-content__form-text
+                width: 465px
+                height: 145px
+                padding: 11px
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 30px
+                color: rgba(0, 0, 0, 0.6)
+                background: transparent
+                margin-bottom: 30px
+                resize: none
+            .questions-content__form-btn
+                width: 465px
+                height: 67px
+                background-color: #025ED4
+                box-shadow: inset 2px 2px 5px rgba(133, 217, 255, 0.6)
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 20px
+                color: #FFF
+                border: none
+                cursor: pointer
+.footer
+    display: flex
+    justify-content: center
+    .footer-content
+        height: 258px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 30px 0
+        .footer-logo
+            .footer-logo__img
+                margin-bottom: 12px
+            .footer-logo__text
+                font-family: 'Play'
+                font-style: normal
+                font-weight: 700
+                font-size: 16px
+                line-height: 20px
+                color: #000000
+                margin-bottom: 59px
+            .footer-logo__copy
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #919191
+            .footer-logo__politics
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                text-decoration: none
+                text-decoration-line: underline
+                color: #919191
+        .footer-menu
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            .footer-menu__link
+                text-decoration: none
+                .footer-menu__link__title
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    color: #000000
+                    /* margin-bottom: 27px */
+        .footer-contacts
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .footer-contacts__address, .footer-contacts__phone, .footer-contacts__email
+                /* margin-bottom: 14px */
+                .footer-contacts__address-title, .footer-contacts__phone-title, .footer-contacts__email-title
+                    font-family: 'Roboto'   
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 20px
+                    color: #919191
+                .footer-contacts__address-subtitle, .footer-contacts__phone-subtitle, .footer-contacts__email-subtitle
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+                    color: #000000
+                .footer-contacts__social
+                    width: 83.2px
+                    height: 23px
